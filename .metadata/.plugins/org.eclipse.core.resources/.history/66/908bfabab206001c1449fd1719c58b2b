@@ -1,0 +1,17 @@
+
+public class Variables {
+	
+/*
+ * Declarar Varialbes en cusro Video 6
+ */
+	
+	
+	int edad = 30;
+	
+	edad = 39;
+	
+	System.out.print(edad);
+	
+	
+	
+}

@@ -1,0 +1,14 @@
+package InicioMain;
+
+public class ComienzoMain {
+
+	public static void main(String[] args) {
+
+		//System.out.println("Hola Curso");
+		Variables var = new Variables();
+		
+		System.out.print(var);
+
+	}
+
+}

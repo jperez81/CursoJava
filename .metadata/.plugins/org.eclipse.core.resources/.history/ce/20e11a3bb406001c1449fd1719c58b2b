@@ -1,0 +1,18 @@
+package Estructuras;
+
+public class Variables2 {
+
+  void var() {
+	  
+	  int edad;
+	  
+	  edad=30;
+	  
+	  System.out.println(edad);
+	  
+  }
+
+	
+
+
+}

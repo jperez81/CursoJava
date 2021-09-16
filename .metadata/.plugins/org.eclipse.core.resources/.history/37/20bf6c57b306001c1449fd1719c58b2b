@@ -1,0 +1,11 @@
+package InicioMain;
+
+public class Variables {
+
+	int edad= 30;
+	
+	edad = 20;
+	
+	system.out.println(edad);
+	
+}
