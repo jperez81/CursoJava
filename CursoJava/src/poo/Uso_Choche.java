@@ -11,5 +11,8 @@ public class Uso_Choche {
 		//Renault.color= "Rosa";
 		System.out.println(Renault.dime_datos_generales());
 		System.out.println(Renault.dime_color());
+		
+		Renault.configura_asientos("si");//Instanciamos el objeto y le enviamos el parametros "si" al Setters
+		System.out.println(Renault.dime_asientos());//nos imprime lo que nos devuelve el Getters seguen el argumento enviadogit 
 	}
 }

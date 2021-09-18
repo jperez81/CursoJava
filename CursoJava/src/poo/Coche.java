@@ -12,7 +12,8 @@ public class Coche {
 	private int peso_total;
 	private boolean asientos_cuero, climatizador;
 
-	public Coche() {
+	public Coche() { // METODO CONSTRUCTOR LO QUE HACE ES ESTABLECER UN ESTADO INICIAL PARA EL OBJETO
+						// COCHE, TIENE QUE SER SIEMPRE PLUBICO
 
 		ruedas = 4;
 		largo = 2000;
@@ -39,23 +40,67 @@ public class Coche {
 		return "El color del coche es : " + color;
 
 	}
-	
-	public void configura_asientos(String asientos_cuero) { //SETTERS
-		
-		if(asientos_cuero == "si") {
+
+	public void configura_asientos(String asientos_cuero) { // SETTERS
+
+		if (asientos_cuero == "si") {
 			this.asientos_cuero = true;
-		}else {
+		} else {
 			this.asientos_cuero = false;
 		}
 	}
-	public String dime_asientos() {
-		if(asientos_cuero == true) {
+
+	public String dime_asientos() { // GETTERS
+		if (asientos_cuero == true) {
 			return "El coche tiene asientos de cuero";
-		}else {
+		} else {
 			return "El coche no tiene asientos de cuero";
-			
+
 		}
-		
+
+	}
+
+	public void configura_climatizador(String climatizador) { // Setters
+
+		if (climatizador == "si") {
+			this.climatizador = true;
+		} else {
+			this.climatizador = false;
+		}
+
+	}
+
+	public String dime_climatizador() { // Getters
+
+		if (climatizador == true) {
+			return "El coche incorpora climatizador";
+		} else {
+
+			return "El coche lleva aire acondicionado";
+		}
+	}
+
+	public String dime_peso_coche() { // MEZCLA DE SETTERS Y GETTERS
+		int peso_carroceria = 500;
+		peso_total = peso_plataforma + peso_carroceria;
+		if (asientos_cuero == true) {
+			peso_total = peso_total + 50;
+		}
+		if (climatizador == true) {
+			peso_total = peso_total + 20;
+		}
+		return "El peso del coche es " + peso_total;
+	}
+
+	public int precio_coche() { // GETTERS
+		int precio_final = 10000;
+		if (asientos_cuero == true) {
+			precio_final += 2000;
+		}
+		if (climatizador == true) {
+			precio_final += 1500;
+		}
+		return precio_final;
 	}
 
 }
