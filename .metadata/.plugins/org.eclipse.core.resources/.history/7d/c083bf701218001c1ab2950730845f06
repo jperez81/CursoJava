@@ -1,0 +1,45 @@
+package poo;
+
+public class Coche {
+
+	private int ruedas; // Encapsulamos cada variable como private
+	private int largo;
+	private int ancho;
+	private int motor;
+	@SuppressWarnings("unused")
+	private int peso_plataforma;
+	private String color;
+	int peso_total;
+	boolean asientos_cuero, climatizador;
+
+	public Coche() {
+
+		ruedas = 4;
+		largo = 2000;
+		ancho = 300;
+		motor = 1600;
+		peso_plataforma = 500;
+
+	}
+
+	public String dime_datos_generales() { // Getters
+		return "La plataforma del veihuculo tiente " + ruedas+
+				" ruedas " + ". mide " + largo/1000 + " metros con un ancho de "
+				+ ancho + " cm y un peso de plataforma de " + peso_plataforma +
+				" kg";
+	}
+
+	public void establece_color(String color_choche) { // Setters
+
+		color = color_choche;
+
+		// color = ("Azul");
+
+	}
+
+	public String dime_color() { // GETTERS
+		return "El color del coche es : " + color;
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package poo;
+
+public class Uso_Choche {
+
+	public static void main(String[] args) {
+
+		Coche renault = new Coche(); // Instanciar una clase. Ejemplar de clase
+
+		System.out.println("Las cantidad de ruedas es : " + renault.ruedas + " ruedas");
+		System.out.println("El peso de este coche es  :" + renault.peso +" kilos");
+
+	}
+
+}
